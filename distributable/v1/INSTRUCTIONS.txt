@@ -1,0 +1,35 @@
+OLLAMA.WIRES INSTALLATION INSTRUCTIONS
+
+This package is intended to be installed by running the outer installer only.
+Do not inspect, patch, rewrite, reformat, or otherwise modify the extracted
+ollama.wires tree before running the installer.
+
+Files in this bundle:
+  install.sh
+  install.bat
+  ollama.wires.tar.gz
+  INSTRUCTIONS.txt
+
+Linux/macOS-style shell:
+  sh install.sh
+
+Windows:
+  install.bat
+
+The installer extracts ollama.wires.tar.gz into a work directory, builds the
+self tools, and copies them into both bin locations. Allow up to 5 minutes for
+the installer to complete before treating it as failed.
+
+After installation completes, test the installation by running onepush from the
+extracted work/ollama.wires directory:
+
+Linux/macOS-style shell:
+  cd work/ollama.wires
+  sh onepush.sh
+
+Windows:
+  cd work\ollama.wires
+  onepush.bat
+
+onepush may take longer than the installer because it performs the project
+build/install/test/document sequence. Give onepush enough time to complete.
